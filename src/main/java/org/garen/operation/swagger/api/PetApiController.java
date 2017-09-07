@@ -1,6 +1,7 @@
 package org.garen.operation.swagger.api;
 
 import io.swagger.annotations.ApiParam;
+import org.garen.operation.exception.BusinessException;
 import org.garen.operation.swagger.model.ModelApiResponse;
 import org.garen.operation.swagger.model.Pet;
 import org.springframework.http.HttpStatus;
@@ -19,7 +20,8 @@ public class PetApiController implements PetApi {
 
     public ResponseEntity<Void> addPet(@ApiParam(value = "Pet object that needs to be added to the store" ,required=true ) @RequestBody Pet body) {
         // do some magic!
-        return new ResponseEntity<Void>(HttpStatus.OK);
+        throw new BusinessException("测试直接抛异常");
+        //return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
     public ResponseEntity<Void> deletePet(@ApiParam(value = "Pet id to delete",required=true ) @PathVariable("petId") Long petId,
@@ -40,7 +42,8 @@ public class PetApiController implements PetApi {
 
     public ResponseEntity<Pet> getPetById(@ApiParam(value = "ID of pet to return",required=true ) @PathVariable("petId") Long petId) {
         // do some magic!
-        return new ResponseEntity<Pet>(HttpStatus.OK);
+        throw new BusinessException("测试直接抛异常");
+        //return new ResponseEntity<Pet>(HttpStatus.OK);
     }
 
     public ResponseEntity<Void> updatePet(@ApiParam(value = "Pet object that needs to be added to the store" ,required=true ) @RequestBody Pet body) {
