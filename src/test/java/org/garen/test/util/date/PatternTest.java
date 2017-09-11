@@ -1,6 +1,6 @@
 package org.garen.test.util.date;
 
-import org.garen.operation.util.date.Pattern;
+import org.garen.template.util.date.Pattern;
 import org.junit.Test;
 
 /**

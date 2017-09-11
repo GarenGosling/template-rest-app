@@ -1,7 +1,7 @@
 package org.garen.test.util.date;
 
-import org.garen.operation.swagger.model.Pet;
-import org.garen.operation.util.JsonMapper;
+import org.garen.template.swagger.model.Pet;
+import org.garen.template.util.JsonMapper;
 import org.junit.Test;
 
 /**

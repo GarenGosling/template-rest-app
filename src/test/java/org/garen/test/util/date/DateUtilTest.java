@@ -1,6 +1,6 @@
 package org.garen.test.util.date;
 
-import org.garen.operation.util.date.DateUtil;
+import org.garen.template.util.date.DateUtil;
 import org.junit.Test;
 
 import java.text.ParseException;

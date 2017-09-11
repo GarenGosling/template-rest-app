@@ -1,6 +1,6 @@
 package org.garen.test.util.esapi;
 
-import org.garen.operation.EsapiUtil;
+import org.garen.template.EsapiUtil;
 import org.junit.Test;
 
 /**
