@@ -1,4 +1,4 @@
-package org.garen.test.redis;
+package org.garen.template.test.redis;
 
 
 import org.garen.template.redis.RedisService;
